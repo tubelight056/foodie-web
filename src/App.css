@@ -1,0 +1,498 @@
+body {
+  padding: 50px;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* Navbar */
+
+.nav-container {
+  display: grid;
+  grid-template-columns: auto 50%;
+  justify-content: space-between;
+  margin-right: 100px;
+}
+.nav-ul {
+  display: inline-grid;
+  margin: 0px;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  padding-right: 10%;
+}
+.nav-brand {
+  display: inline;
+}
+.nav-h1 {
+  display: inline;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ff0202;
+}
+.nav-li {
+  list-style: none;
+  text-align: center;
+  padding: 24px;
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+
+.nav-li:hover {
+  background-color: #ff0202;
+  color: white;
+  border-radius: 15px 15px 15px 15px;
+}
+.nav-li:hover a {
+  color: white;
+}
+/* Home */
+
+.home-container {
+  display: grid;
+  grid-template-columns: 40% 70%;
+  grid-column-gap: 10%;
+  justify-content: space-between;
+}
+
+.home-img {
+  margin-top: 10%;
+  width: 60%;
+  border-radius: 0 60px 0 60px;
+}
+.home-text {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  padding-top: 10%;
+}
+.home-h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-top: 8%;
+  margin-bottom: 20px;
+}
+.home-p {
+  font-size: 2rem;
+}
+.span-details {
+  color: #ff0202;
+}
+.home-btn {
+  padding: 18px 40px;
+  background-color: #ff0202;
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+  border-color: unset;
+  border: unset;
+  border-radius: 15px;
+}
+.menubtn {
+  display: none;
+}
+.cardcontainer {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-evenly;
+}
+
+.home-card {
+  border-style: solid;
+  border-width: 2px;
+  padding: 20px;
+  border-radius: 30px;
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  justify-content: space-evenly;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+.home-card:hover {
+  border-color: #ff0202;
+}
+.card-head {
+  font-weight: 600;
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+.card-p {
+  font-size: 1.5rem;
+  width: 80%;
+  padding: 20px 0px 10px 0px;
+}
+
+.card-btn {
+  background-color: white;
+  color: #ff0202;
+  border-radius: 15px;
+  height: 42px;
+  font-size: 1.2rem;
+  margin: 20px 0px 0px 0px;
+  border-color: #ff0202;
+}
+.card-btn:hover {
+  color: white;
+  background-color: #ff0202;
+}
+
+/* menu */
+
+.menu-body {
+  padding: 5% 0 0 0;
+}
+.menu-head {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.menu-p {
+  font-size: 1.5rem;
+}
+
+.item-container {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+}
+.dish-container {
+  padding: 50px 0px;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-column-gap: 10%;
+  grid-row-gap: 10%;
+}
+.item-container {
+  display: grid;
+  grid-template-columns: 50% 30%;
+  padding: 20px;
+  grid-column-gap: 10%;
+  border-radius: 30px;
+}
+.item-img {
+  border-radius: 15px;
+}
+
+.item-details {
+  padding: 10%;
+  display: grid;
+  grid-template-rows: 50% 40%;
+  grid-row-gap: 10%;
+}
+.item-name {
+  font-size: 2rem;
+  font-weight: 800;
+  justify-content: flex-end;
+}
+.item-price {
+  color: #ff0202;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* promotion */
+
+.promotion-container {
+  margin: 4% 0;
+}
+
+.promotion-head {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.promotion-p {
+  font-size: 1rem;
+  font-weight: medium;
+}
+.promotion-carosal {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.carosal-img {
+  width: 100%;
+  height: 50%;
+  border-radius: 30px;
+}
+.carosal-text {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* reservation */
+.form {
+  display: grid;
+  grid-template-areas:
+    "name tele"
+    "date time"
+    "note note"
+    "txt submit";
+}
+
+.name-inpt {
+  grid-area: name;
+}
+.telephone-inpt {
+  grid-area: tele;
+}
+.date-inpt {
+  grid-area: date;
+}
+.time-inpt {
+  grid-area: time;
+}
+.note-inpt {
+  grid-area: note;
+}
+.submit-btn {
+  grid-area: submit;
+}
+.form-text {
+  grid-area: txt;
+}
+
+.reservation-container {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 5%;
+  margin-bottom: 50px;
+}
+.inpt {
+  padding: 20px;
+  border-color: #efefef;
+  background-color: #efefef;
+  margin: 10px 20px 10px 0px;
+  border-style: solid;
+}
+
+.reservation-head {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.reservation-p {
+  font-size: 1.5rem;
+}
+.reservation-img {
+  width: 80%;
+  border-radius: 30px;
+}
+.submit-btn {
+  background-color: #ff0202;
+  border-color: #ff0202;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 10px 20px 10px 0px;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.contactus-body {
+  background-color: #efefef;
+  padding-top: 50px;
+}
+
+.sub-head {
+  font-size: 2rem;
+  color: #ff0202;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+.sub-p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  font-weight: medium;
+}
+
+.sub-holder {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 20% 10%;
+  justify-content: center;
+}
+.sub-inpt {
+  background-color: white;
+}
+.sub-btn {
+  background-color: #ff0202;
+  border-color: #ff0202;
+  color: white;
+  font-weight: bold;
+  margin: 10px 10px 10px 0px;
+}
+.aboutus-container {
+  display: grid;
+  grid-template-columns: 25% 25% 20% 30%;
+}
+.about-h1 {
+  display: inline;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ff0202;
+  text-align: center;
+}
+.aboutus-container p {
+  text-align: left;
+  font-size: 1.2rem;
+  align-content: center;
+  align-self: center;
+}
+.about-icon {
+  width: 50px;
+  height: 50px;
+  justify-self: center;
+  align-content: center;
+  align-self: center;
+}
+.details-container {
+  display: grid;
+  grid-template-columns: 10% 80%;
+  grid-column-gap: 8%;
+}
+
+@media screen and (max-width: 770px) {
+  .nav-container {
+    grid-template-columns: 90% 10%;
+    margin-right: 0px;
+  }
+  .nav-brand {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .nav-h1 {
+    display: grid;
+    padding: 0px;
+    grid-template-rows: 20% 20% 20% 20%;
+  }
+  .nav-ul {
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    background-color: #ff0202;
+  }
+  .menubtn {
+    display: inline;
+    position: absolute;
+    font-weight: bold;
+    top: 100px;
+    right: 50px;
+    padding: 10px;
+    color: #ff0202;
+    font-size: 3rem;
+    border-radius: 15px;
+    background-color: white;
+    border: none;
+  }
+  .hidden {
+    transition: left 2s;
+    left: 150%;
+  }
+  .visible {
+    transition: left 2s;
+    left: 30%;
+  }
+  .nav-li {
+    display: block;
+    text-align: center;
+    color: white;
+  }
+  .home-img {
+    display: none;
+  }
+  .cardcontainer {
+    grid-template-columns: none;
+    grid-template-rows: 30% 30% 30%;
+    grid-row-gap: 5%;
+    margin: 20% 0%;
+  }
+
+  .menu-head {
+    margin: 10% 0 0 0;
+  }
+
+  .dish-container {
+    grid-template-columns: none;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-column-gap: 0;
+    grid-row-gap: 25px;
+  }
+  .item-container {
+    padding: 0px;
+  }
+
+  .item-img {
+    width: 113%;
+    height: 100%;
+  }
+
+  .item-name {
+    font-size: 1.5rem;
+  }
+
+  .promotion-carosal {
+    grid-template-columns: none;
+    grid-template-rows: 30% 30% 30%;
+  }
+  .carosal-container {
+    display: grid;
+    grid-template-rows: 80% 40%;
+    margin: 5% 0;
+  }
+  .carosal-img {
+    width: 100%;
+    height: 100%;
+  }
+  .reservation-img {
+    display: none;
+  }
+  .reservation-container {
+    grid-template-columns: 0%;
+    display: block;
+  }
+  .form {
+    grid-template-areas:
+      "name name"
+      "tele tele"
+      "date date"
+      "time time"
+      "note note"
+      "note note"
+      "txt txt"
+      "submit submit"
+      "submit submit";
+  }
+
+  .submit-btn {
+    padding: 5%;
+  }
+
+  .sub-holder {
+    display: grid;
+    grid-template-columns: 65% 30%;
+    justify-content: space-around;
+    grid-column-gap: 0%;
+  }
+  .sub-inpt {
+    margin: 10px 10px;
+  }
+
+  .sub-btn {
+    margin: 10px 10px;
+  }
+  .aboutus-container {
+    grid-template-columns: none;
+    grid-template-rows: 50% 50% 50% 50%;
+  }
+  .details-container {
+    justify-content: space-around;
+    grid-template-columns: 20% 70%;
+  }
+}
